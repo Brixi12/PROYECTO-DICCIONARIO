@@ -1,0 +1,35 @@
+<!--Brixman Omar Cruz Morales-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica dictionary</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+</head>
+<body> 
+    <div class="bg-green-100 min-h-screen pt-10">
+        <h2 class="text-green-600 text-5xl pt-4 font-semibold text-center">
+             Dictionary 
+        </h2>
+        <div class="flex justify-center p-8 items-center">
+        <input type="text" placeholder="Enter the word" id="word" class=" py-2 w-1/4 focus:outline-none border-2 
+        border-green-600 rounded px-3 "/>
+        <button
+        id="search"
+        class="bg-green-600 text-white text-xl px-4 py-2 rounded">
+        Search
+        </button>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+        <div id="partOfSpeechDiv" class="hidden">
+        </div>
+        <div class="hidden" id="meaningDiv">
+        <h2 class="text-4xl py-3 px-3 text-green-500" id="meaningHeader"></h2>
+        </div>
+        </div>
+        </div>
+    <script src="./main.js"></script>
+</body>
+</html>
